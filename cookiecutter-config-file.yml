@@ -5,7 +5,7 @@ default_context:
   project_description: "comparison of polars performance to pandas on sagemaker compute optimised instance"
   organization: "playground"
   license: "MIT"
-  minimal_python_version: 3.9
+  minimal_python_version: 3.10
   github_name: "ryankarlos"
   email: "ryankarlos@gmail.com"
   version: "0.1.0"
