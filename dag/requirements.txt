@@ -1,0 +1,4 @@
+polars>=0.18.4
+boto >=2.49.0
+aws >=0.2.5
+apache-airflow >=2.7.1

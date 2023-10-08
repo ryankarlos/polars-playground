@@ -6,18 +6,17 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "polars-playground"
 version = "0.1.0"
-description = "comparison of polars performance to pandas on sagemaker compute optimised instance"
+description = "pipeline using polars in airflow dag"
 readme = "README.md"
 authors = ["playground <ryankarlos@gmail.com>"]
 repository = "https://github.com/ryankarlos/polars-playground"
 
 [tool.poetry.dependencies]
-python =  ">=3.10.8,<=3.11.4"
+python =  ">=3.11.4,<=3.12"
 polars = "^0.18.4"
-pandas = "^2.0.2"
-numpy = "^1.25.0"
 boto = "^2.49.0"
 aws = "^0.2.5"
+apache-airflow = "^2.7.1"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -25,12 +24,10 @@ pytest = "^7.4.0"
 ruff = "^0.0.275"
 black = "^23.3.0"
 pytest-cov = "^4.1.0"
-nox = "^2023.4.22"
-tox = "^4.6.3"
+
 
 [tool.black]
-# https://github.com/psf/black
-target-version = ["py311", "py310"]
+target-version = ["py311"]
 line-length = 88
 color = true
 
